@@ -1,22 +1,18 @@
 ---
-title: Case study 3
-slug: case-study-3
-date: '2021-11-18'
-excerpt: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem,
-  tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien.
-  Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem
-  pellentesque fermentum. Sed in facilisis dui.
+title: Beginner Metrics Dashboard Case Study
+slug: beginner-metrics-dashboard-case-study
+date: '2026-03-01'
+excerpt: Built a lightweight metrics dashboard to present student performance trends and compare readability versus implementation complexity.
 featuredImage:
-  url: >-
-    /images/img-placeholder.svg
-  altText: Case study 3
+  type: ImageBlock
+  url: /images/abstract-feature3.svg
+  altText: Beginner metrics dashboard case study thumbnail
   styles:
     self:
       borderRadius: x-large
-  type: ImageBlock
 bottomSections:
-  - title: Divider
+  - type: DividerSection
+    title: Divider
     colors: bg-light-fg-dark
     styles:
       self:
@@ -25,37 +21,7 @@ bottomSections:
           - pl-7
           - pb-7
           - pr-7
-    type: DividerSection
-  - items:
-      - title: About Company
-        tagline: This is the tagline
-        subtitle: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante
-          lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at
-          auctor sapien.
-        image:
-          url: /images/telus-logo.svg
-          altText: Company logo
-          styles:
-            self:
-              margin:
-                - ml-3
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-6
-              - pl-6
-              - pb-6
-              - pr-6
-            textAlign: left
-            borderColor: border-neutralAlt
-            borderStyle: none
-            borderWidth: 0
-            borderRadius: none
-            flexDirection: row
-        type: FeaturedItem
+  - type: FeaturedItemsSection
     variant: small-list
     colors: bg-light-fg-dark
     styles:
@@ -68,9 +34,28 @@ bottomSections:
           - pb-0
           - pr-0
         justifyContent: center
-      subtitle:
-        textAlign: center
-    type: FeaturedItemsSection
+    items:
+      - type: FeaturedItem
+        title: Project Links
+        subtitle: Demo and source repositories
+        text: >-
+          Live demo: https://example.netlify.app/metrics-dashboard\n\nSource:
+          https://github.com/daniel-dev-portfolio/beginner-metrics-dashboard
+        image:
+          type: ImageBlock
+          url: /images/icon3.svg
+          altText: Metrics project links icon
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-6
+              - pl-6
+              - pb-6
+              - pr-6
+            textAlign: left
+            borderRadius: none
+            flexDirection: row
 isFeatured: true
 colors: bg-light-fg-dark
 styles:
@@ -81,26 +66,52 @@ styles:
       - pb-5
       - pr-5
     textAlign: center
-    borderColor: border-light
     borderStyle: none
     borderWidth: 0
     borderRadius: none
     flexDirection: col
+author: content/data/person5.json
+seo:
+  type: Seo
+  metaTitle: Beginner Metrics Dashboard Case Study
+  metaDescription: Case study on visualization choices, data handling tradeoffs, and performance improvements.
+  socialImage: /images/abstract-feature3.svg
 type: PostLayout
 ---
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor.
+## Project Summary
 
-Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+This project translated tabular academic data into a dashboard view that made performance trends easier to interpret. The scope emphasized clarity over visual novelty.
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum.
+## Problem
 
-> Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
->
-> _By Laura Gómez - Product Marketing Manager_
+Raw spreadsheets made it difficult to spot weak subjects and progress over time. The dashboard needed to present trends quickly without overwhelming non-technical viewers.
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+## Constraints
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+- Had to run in a static environment with minimal dependencies.
+- Charts needed to stay readable on mobile.
+- Data source quality varied and included missing values.
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+## Architecture Decisions
+
+1. Defined a small transformation layer to normalize score records before rendering.
+2. Chose limited chart types and consistent color mapping to reduce cognitive load.
+3. Used summary cards above charts so key numbers were visible without interaction.
+4. Added fallback UI states for missing category data.
+
+## Accessibility and Performance
+
+- Added descriptive chart labels and contextual summaries for non-visual scanning.
+- Reduced script cost by trimming unnecessary visualization options.
+- Optimized image and icon loading behavior for faster first render.
+
+## Outcome
+
+- Reviewers identified at-risk categories in under 20 seconds on average.
+- Layout remained stable across tested mobile breakpoints.
+- Performance score improved after reducing heavy chart configuration defaults.
+
+## What Was Learned
+
+Simple data storytelling worked better than complex visualization. Reliable naming, summary cues, and clean fallback states improved trust and usability more than additional chart interactions.

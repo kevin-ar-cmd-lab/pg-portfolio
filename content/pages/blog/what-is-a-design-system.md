@@ -1,14 +1,13 @@
 ---
 type: PostLayout
-title: What is a Design System
-slug: what-is-a-design-system
-date: '2023-02-14'
-excerpt: >-
-  A Design System is a comprehensive set of standards, principles, and tools that guide the design and development of a product or service. It provides a unified framework to ensure consistency, efficiency, and scalability across a product's user interface (UI) and user experience (UX).
+title: Design System Basics Applied to This Portfolio
+slug: design-system-basics-applied-to-this-portfolio
+date: '2026-02-27'
+excerpt: How basic design system thinking improved consistency, readability, and maintainability across portfolio pages.
 featuredImage:
-  url: /images/abstract-feature3.svg
-  altText: Thumbnail
   type: ImageBlock
+  url: /images/abstract-feature3.svg
+  altText: Design system basics portfolio thumbnail
   styles:
     self:
       borderRadius: medium
@@ -16,10 +15,10 @@ bottomSections: []
 isFeatured: false
 isDraft: false
 seo:
-  metaTitle: What is a Design System
-  metaDescription: You can add the excerpt and main keywords of your blog post here.
-  socialImage: /images/abstract-feature3.svg
   type: Seo
+  metaTitle: Design System Basics Applied to This Portfolio
+  metaDescription: Practical design system principles used to improve portfolio consistency.
+  socialImage: /images/abstract-feature3.svg
 colors: bg-light-fg-dark
 styles:
   self:
@@ -27,22 +26,15 @@ styles:
 author: content/data/person2.json
 ---
 
-A **Design System** is a comprehensive set of standards, principles, and tools that guide the design and development of a product or service. It provides a unified framework to ensure consistency, efficiency, and scalability across a product's user interface (UI) and user experience (UX).
+Basic design system practices helped convert a template into a consistent portfolio experience.
 
-### Key Components of a Design System:
+## Principles Used
 
-1. **Style Guide**: Defines the visual elements like color palettes, typography, icons, and spacing guidelines.
-2. **Component Library**: A collection of reusable UI components such as buttons, forms, modals, etc., that adhere to the style guide.
-3. **Design Principles**: Core philosophies and guidelines that inform the design choices, ensuring a cohesive look and feel.
-4. **Patterns**: Reusable solutions for common design problems, such as navigation, search, or error handling.
-5. **Documentation**: Comprehensive guidance on how to use and implement the components, principles, and patterns.
-6. **Branding Guidelines**: Ensures that the product's design aligns with the overall brand identity.
+- Reuse section patterns for repeated content types.
+- Keep typography hierarchy consistent between pages.
+- Use predictable action styles for primary and secondary calls-to-action.
+- Apply a shared spacing rhythm to reduce visual noise.
 
-### Benefits of a Design System:
+## Portfolio Impact
 
-- **Consistency**: Ensures a cohesive user experience across different platforms and products.
-- **Efficiency**: Speeds up the design and development process by providing ready-to-use components and guidelines.
-- **Scalability**: Makes it easier to scale the product by maintaining design consistency as the team grows or the product evolves.
-- **Collaboration**: Enhances communication between designers, developers, and other stakeholders by providing a common language and resources.
-
-Would you like to dive deeper into any specific aspect of a Design System?
+Consistency made project pages easier to compare and reduced maintenance effort when content changed. It also created a clearer signal that implementation decisions were intentional, not accidental.

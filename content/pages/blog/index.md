@@ -1,16 +1,17 @@
 ---
-title: Blog
+title: Project Journal
 slug: /blog
-numOfPostsPerPage: 8
+numOfPostsPerPage: 9
 enableSearch: true
 topSections:
-  - title:
-      text: Featured Post
-      color: text-dark
+  - type: FeaturedPostsSection
+    title:
       type: TitleBlock
-    subtitle: This is the subtitle
+      text: Featured Case Study
+      color: text-dark
+    subtitle: End-to-end breakdown from problem to measurable result
     posts:
-      - content/pages/blog/top-ten-lessons-we-learned.md
+      - content/pages/blog/case-study-1.md
     showThumbnail: true
     showExcerpt: true
     showDate: true
@@ -25,18 +26,15 @@ topSections:
           - pl-4
           - pr-4
         justifyContent: flex-start
-    type: FeaturedPostsSection
     hoverEffect: move-up
 styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Blog - Demo site
-  metaDescription: >-
-    This is the blog of the demo site where we post about technology, product,
-    and design.
-  socialImage: /images/img-placeholder.svg
   type: Seo
+  metaTitle: Project Journal | Daniel Portfolio
+  metaDescription: Detailed case studies, engineering notes, and portfolio development updates.
+  socialImage: /images/main-hero.jpg
 type: PostFeedLayout
 bottomSections: []
 postFeed:

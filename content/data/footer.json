@@ -9,7 +9,7 @@
     "title": "Portfolio",
     "links": [
       {
-        "label": "Intro",
+        "label": "Home",
         "url": "/#intro",
         "icon": "arrowRight",
         "iconPosition": "right",
@@ -18,15 +18,23 @@
       },
       {
         "label": "Projects",
-        "url": "/#projects",
+        "url": "/blog",
         "icon": "arrowRight",
         "iconPosition": "right",
         "style": "secondary",
         "type": "Link"
       },
       {
-        "label": "Contact",
-        "url": "/#contact",
+        "label": "About",
+        "url": "/about",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      },
+      {
+        "label": "Resume",
+        "url": "/resume",
         "icon": "arrowRight",
         "iconPosition": "right",
         "style": "secondary",
@@ -40,7 +48,7 @@
     "links": [
       {
         "label": "GitHub",
-        "url": "https://github.com/",
+        "url": "https://github.com/daniel-dev-portfolio",
         "icon": "arrowRight",
         "iconPosition": "right",
         "style": "secondary",
@@ -48,7 +56,15 @@
       },
       {
         "label": "LinkedIn",
-        "url": "https://www.linkedin.com/",
+        "url": "https://www.linkedin.com/in/daniel-dev-portfolio",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      },
+      {
+        "label": "Resume (TXT)",
+        "url": "/resume-daniel.txt",
         "icon": "arrowRight",
         "iconPosition": "right",
         "style": "secondary",
@@ -60,13 +76,13 @@
   "socialLinks": [
     {
       "altText": "GitHub profile",
-      "url": "https://github.com/",
+      "url": "https://github.com/daniel-dev-portfolio",
       "icon": "github",
       "type": "Social"
     },
     {
       "altText": "LinkedIn profile",
-      "url": "https://www.linkedin.com/",
+      "url": "https://www.linkedin.com/in/daniel-dev-portfolio",
       "icon": "linkedin",
       "type": "Social"
     },
