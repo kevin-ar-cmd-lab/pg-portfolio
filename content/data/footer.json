@@ -1,109 +1,84 @@
 {
-    "logo": {
-        "url": "/images/logo-white.svg",
-        "altText": "Logo light",
-        "type": "ImageBlock"
-    },
-    "text": "A description of your brand",
-    "primaryLinks": {
-        "title": "Product",
-        "links": [
-            {
-                "label": "Features",
-                "altText": "Features page",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Documentation",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            }
-        ],
-        "type": "FooterLinksGroup"
-    },
-    "secondaryLinks": {
-        "title": "Company",
-        "links": [
-            {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            }
-        ],
-        "type": "FooterLinksGroup"
-    },
-    "socialLinks": [
-        {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
-            "type": "Social"
-        },
-        {
-            "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
-            "icon": "twitter",
-            "type": "Social"
-        },
-        {
-            "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
-            "icon": "linkedin",
-            "type": "Social"
-        },
-        {
-            "altText": "Email link",
-            "url": "/",
-            "icon": "mail",
-            "type": "Social"
-        }
+  "logo": {
+    "url": "/images/avatar1.svg",
+    "altText": "Daniel portfolio logo",
+    "type": "ImageBlock"
+  },
+  "text": "Daniel is an introductory computer science student building practical web experiences and preparing for a first internship.",
+  "primaryLinks": {
+    "title": "Portfolio",
+    "links": [
+      {
+        "label": "Intro",
+        "url": "/#intro",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      },
+      {
+        "label": "Projects",
+        "url": "/#projects",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      },
+      {
+        "label": "Contact",
+        "url": "/#contact",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      }
     ],
-    "legalLinks": [
-        {
-            "label": "Terms",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Privacy",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        }
+    "type": "FooterLinksGroup"
+  },
+  "secondaryLinks": {
+    "title": "Profiles",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      }
     ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
-    "colors": "bg-dark-fg-light",
-    "type": "Footer"
+    "type": "FooterLinksGroup"
+  },
+  "socialLinks": [
+    {
+      "altText": "GitHub profile",
+      "url": "https://github.com/",
+      "icon": "github",
+      "type": "Social"
+    },
+    {
+      "altText": "LinkedIn profile",
+      "url": "https://www.linkedin.com/",
+      "icon": "linkedin",
+      "type": "Social"
+    },
+    {
+      "altText": "Email Daniel",
+      "url": "mailto:daniel.student@example.com",
+      "icon": "mail",
+      "type": "Social"
+    }
+  ],
+  "legalLinks": [],
+  "copyrightText": "© Daniel Portfolio",
+  "colors": "bg-dark-fg-light",
+  "type": "Footer"
 }

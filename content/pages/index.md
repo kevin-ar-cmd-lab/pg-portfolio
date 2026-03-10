@@ -1,46 +1,41 @@
 ---
-title: Home
+title: Daniel | Student Portfolio
 slug: /
 sections:
   - type: GenericSection
+    elementId: intro
     title:
-      text: Unblock your team boost your time to production
-      color: text-dark
       type: TitleBlock
-    subtitle: Subtitle goes here
-    text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
+      text: Daniel | Introductory Computer Science Student
+      color: text-dark
+    subtitle: Building practical web projects while learning core development skills
+    text: >-
+      Daniel is an entry-level student focused on front-end fundamentals, problem
+      solving, and clean user experiences. This portfolio highlights academic
+      projects, technical strengths, and current learning goals.
     actions:
-      - label: Get started
-        altText: ''
-        url: /
+      - type: Button
+        label: View Projects
+        url: /#projects
+        style: primary
         showIcon: false
         icon: arrowRight
         iconPosition: right
+      - type: Link
+        label: Contact Daniel
+        url: /#contact
         style: secondary
-        elementId: ''
-        type: Button
-      - label: See Tutorials
-        altText: ''
-        url: /
         showIcon: true
         icon: arrowRight
         iconPosition: right
-        style: primary
-        elementId: ''
-        type: Link
     media:
-      url: /images/main-hero.svg
-      altText: Unblock your team boost your time to production preview
-      elementId: ''
       type: ImageBlock
+      url: /images/main-hero.svg
+      altText: Portfolio hero illustration
     badge:
-      label: This is a badge
-      color: text-primary
       type: Badge
-    elementId: ''
+      label: Open to internship opportunities
+      color: text-primary
     colors: bg-light-fg-dark
     styles:
       self:
@@ -51,56 +46,53 @@ sections:
           - pl-16
           - pb-16
           - pr-16
+
   - type: FeaturedItemsSection
+    elementId: skills
     title:
-      text: Key Benefits
+      type: TitleBlock
+      text: Core Skills
       color: text-dark
       styles:
         self:
           textAlign: center
-      type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Current capabilities built through coursework and personal practice
+    badge:
+      type: Badge
+      label: Technical Foundation
+      color: text-primary
+      styles:
+        self:
+          textAlign: center
     items:
       - type: FeaturedItem
-        title: 500k
-        subtitle: Numbers Done
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        actions: []
-        elementId: null
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: row
-            justifyContent: center
-            textAlign: left
+        title: HTML & Semantic Structure
+        subtitle: Strong page structure and accessibility basics
+        text: Creates responsive page layouts with semantic tags and clear content hierarchy.
         image:
           type: ImageBlock
-          altText: Lightning bolt symbol on red background
-          elementId: ''
           url: /images/icon1.svg
-          styles:
-            self:
-              borderRadius: x-large
-      - title: 20x
-        subtitle: The Job Stuff
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          altText: Skill icon one
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: row
+            textAlign: left
+      - type: FeaturedItem
+        title: CSS & Tailwind Styling
+        subtitle: Clean styling and component-level consistency
+        text: Applies spacing systems, typography, and utility classes to build polished interfaces.
         image:
+          type: ImageBlock
           url: /images/icon2.svg
-          altText: Featured icon two
-          elementId: ''
-          type: ImageBlock
+          altText: Skill icon two
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -113,19 +105,14 @@ sections:
             borderRadius: x-large
             flexDirection: row
             textAlign: left
-            justifyContent: center
-        type: FeaturedItem
-      - title: 200%
-        subtitle: Faster
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+      - type: FeaturedItem
+        title: JavaScript Fundamentals
+        subtitle: Interactive behavior and logic building
+        text: Uses modern JavaScript for dynamic UI features, validation, and state updates.
         image:
+          type: ImageBlock
           url: /images/icon3.svg
-          altText: Featured icon three
-          elementId: ''
-          type: ImageBlock
+          altText: Skill icon three
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -137,478 +124,46 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
-        type: FeaturedItem
-    actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Button
-    badge:
-      label: This is a badge
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
-    elementId: ''
-    variant: three-col-grid
-    colors: bg-neutral-fg-dark
-    styles:
-      self:
-        padding:
-          - pb-16
-          - pt-16
-          - pl-16
-          - pr-16
-        justifyContent: center
-      subtitle:
-        textAlign: center
-  - subtitle: Award winning enterprises trust us
-    images:
-      - url: /images/empathy-logo.svg
-        altText: Empathy logo
-        type: ImageBlock
-      - url: /images/wellster-logo.svg
-        altText: Wellster logo
-        type: ImageBlock
-      - url: /images/vise-logo.svg
-        altText: Vise logo
-        type: ImageBlock
-      - url: /images/telus-logo.svg
-        altText: Telus logo
-        type: ImageBlock
-      - url: /images/contenful-logo.svg
-        altText: Contentful logo
-        type: ImageBlock
-      - url: /images/sanity-logo.svg
-        altText: Sanity logo
-        type: ImageBlock
-      - url: /images/rangle-logo.svg
-        altText: Rangle logo
-        type: ImageBlock
-    motion: move-to-left
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
-  - title: Divider
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
-  - title:
-      text: Grow your business 10x faster
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: This is a subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-      autoplay: true
-      loop: true
-      muted: true
-    badge:
-      label: Key Benefits
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: col
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: GenericSection
-  - type: GenericSection
-    title:
-      text: Generic section with a video
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
-      type: TitleBlock
-    subtitle: Section with a video subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+            textAlign: left
     actions: []
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      autoplay: true
-      loop: true
-      muted: true
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-    elementId: null
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: row
-        justifyContent: center
-      subtitle:
-        textAlign: left
-  - title:
-      text: Social Media Management
-      color: text-dark
-      type: TitleBlock
-    subtitle: Increase your reach
-    text: >
-      A service that helps businesses to manage their social media accounts and
-      posts.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero2.svg
-      altText: Fun feature preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-    type: GenericSection
-  - title:
-      text: Business Consulting
-      color: text-dark
-      type: TitleBlock
-    subtitle: Be in good company
-    text: >
-      A service that provides advice and guidance to startups and small
-      businesses.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero3.svg
-      altText: Dope design preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-        flexDirection: row-reverse
-    type: GenericSection
-  - title: Divider
-    colors: bg-light-fg-dark
+    variant: three-col-grid
+    colors: bg-neutral-fg-dark
     styles:
       self:
         padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
-  - type: CarouselSection
-    title: null
-    subtitle: What our customers say about us
-    items:
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 1
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is a plan for arranging elements in such a way as best to accomplish a particular purpose."
-        tagline: Testimonial 2
-        subtitle: 'John Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: John Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is how it works, how it functions. Good design doesn't just make a product aesthetically pleasing, it makes it a pleasure to use."
-        tagline: Testimonial 3
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 4
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."
-        tagline: Testimonial 5
-        subtitle: 'Jane Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “Quote from some important person goes right here. I love using Netlify Create.”
-        tagline: Testimonial 6
-        subtitle: 'Jane Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/img-placeholder-dark.png
-          altText: Jane Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-dark-fg-light
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-    elementId: null
-    variant: next-prev-nav
-    colors: bg-light-fg-dark
-    styles:
-      self:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
         justifyContent: center
       subtitle:
         textAlign: center
-  - title:
-      text: List of features here
-      color: text-primary
+
+  - type: FeaturedItemsSection
+    elementId: projects
+    title:
+      type: TitleBlock
+      text: Selected Projects
+      color: text-dark
       styles:
         self:
           textAlign: center
-      type: TitleBlock
-    subtitle: Featured items section subtitle
+    subtitle: Intro-level projects focused on practical outcomes
     items:
-      - title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
+      - type: FeaturedItem
+        title: Study Planner App
+        tagline: Personal productivity tool
+        subtitle: HTML, CSS, JavaScript
+        text: >-
+          Built a lightweight planner to track assignments and deadlines with
+          status filters and local browser storage.
         image:
+          type: ImageBlock
           url: /images/abstract-feature1.svg
-          altText: Placeholder Image
+          altText: Study planner project graphic
           styles:
             self:
               borderRadius: x-large
-          type: ImageBlock
         colors: bg-light-fg-dark
         styles:
           self:
@@ -619,19 +174,20 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
+      - type: FeaturedItem
+        title: Club Event Landing Page
+        tagline: Campus communication project
+        subtitle: Responsive web design
+        text: >-
+          Designed and developed a one-page event site with mobile-first layout,
+          schedule highlights, and registration call-to-actions.
         image:
+          type: ImageBlock
           url: /images/abstract-feature2.svg
-          altText: Placeholder image
+          altText: Club event site project graphic
           styles:
             self:
               borderRadius: x-large
-          type: ImageBlock
         colors: bg-light-fg-dark
         styles:
           self:
@@ -642,19 +198,20 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Learn from the tutorial and build your first awesome Netlify Create site.
+      - type: FeaturedItem
+        title: Beginner Data Dashboard
+        tagline: Intro to data presentation
+        subtitle: JavaScript + charting basics
+        text: >-
+          Created a simple dashboard that visualized sample student performance
+          data to practice component reuse and visual hierarchy.
         image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder image
+          type: ImageBlock
+          url: /images/abstract-feature3.svg
+          altText: Dashboard project graphic
           styles:
             self:
               borderRadius: x-large
-          type: ImageBlock
         colors: bg-light-fg-dark
         styles:
           self:
@@ -665,9 +222,8 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: col
-        type: FeaturedItem
     variant: three-col-grid
-    colors: bg-neutral-fg-dark
+    colors: bg-light-fg-dark
     styles:
       self:
         padding:
@@ -678,40 +234,82 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-    type: FeaturedItemsSection
-  - title:
-      text: Generic Section With A Form
-      color: text-dark
+
+  - type: GenericSection
+    elementId: about
+    title:
       type: TitleBlock
-    subtitle: Section with a form subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+      text: Education & Career Goal
+      color: text-dark
+    subtitle: Introductory student profile
+    text: >-
+      Daniel is currently completing foundational computer science coursework and
+      is building a portfolio to prepare for a first internship. Current focus
+      areas include front-end engineering, UI accessibility, and collaborative
+      Git workflows.
+    actions:
+      - type: Link
+        label: Jump to Contact
+        url: /#contact
+        style: primary
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
     media:
+      type: ImageBlock
+      url: /images/hero3.svg
+      altText: Student growth illustration
+    badge:
+      type: Badge
+      label: Learning in public
+      color: text-primary
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        alignItems: center
+        flexDirection: row-reverse
+
+  - type: GenericSection
+    elementId: contact
+    title:
+      type: TitleBlock
+      text: Contact Daniel
+      color: text-dark
+    subtitle: Send a message for internships, project collaboration, or networking
+    text: >-
+      This form can be connected to Netlify Forms to receive submissions. Use it
+      to reach out about opportunities or feedback.
+    media:
+      type: FormBlock
+      elementId: contact-form
       fields:
-        - name: name
+        - type: TextFormControl
+          name: name
           label: Name
           hideLabel: true
           placeholder: Your name
           isRequired: true
           width: full
-          type: TextFormControl
-        - name: email
+        - type: EmailFormControl
+          name: email
           label: Email
           hideLabel: true
           placeholder: Your email
           isRequired: true
           width: full
-          type: EmailFormControl
-        - name: message
+        - type: TextareaFormControl
+          name: message
           label: Message
           hideLabel: true
           placeholder: Your message
           width: full
-          type: TextareaFormControl
-      elementId: contact-form
+      submitButton:
+        type: SubmitButtonFormControl
+        label: Send Message
+        showIcon: false
+        icon: arrowRight
+        iconPosition: right
+        style: primary
       styles:
         self:
           padding:
@@ -723,25 +321,15 @@ sections:
           borderStyle: solid
           borderWidth: 1
           borderRadius: large
-      type: FormBlock
-      submitButton:
-        type: SubmitButtonFormControl
-        label: Submit
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: null
     badge:
-      label: Contact Us
-      color: text-primary
       type: Badge
-    colors: bg-light-fg-dark
-    type: GenericSection
+      label: Get In Touch
+      color: text-primary
+    colors: bg-neutral-fg-dark
 seo:
-  metaTitle: Home - Demo site
-  metaDescription: This demo site is built with Netlify Create.
-  socialImage: /images/main-hero.jpg
   type: Seo
+  metaTitle: Daniel | Student Portfolio
+  metaDescription: Introductory student portfolio for Daniel featuring projects, skills, and contact details.
+  socialImage: /images/main-hero.jpg
 type: PageLayout
 ---
