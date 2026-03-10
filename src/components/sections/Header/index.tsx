@@ -21,7 +21,7 @@ export default function Header(props) {
                 'relative',
                 'shadow-header',
                 styles?.self?.margin ? mapStyles({ padding: styles?.self?.margin }) : undefined,
-                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'p-4',
+                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'px-4 py-2',
                 'z-50'
             )}
             {...(enableAnnotations && { 'data-sb-object-id': props?.__metadata?.id })}
@@ -57,12 +57,12 @@ function HeaderLogoLeftPrimaryLeft(props) {
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
-                <div className="mr-10">
+                <div className="mr-6">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                 </div>
             )}
             {primaryLinks.length > 0 && (
-                <ul className="hidden mr-10 gap-x-10 lg:flex lg:items-center" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+                <ul className="hidden mr-6 gap-x-6 lg:flex lg:items-center" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
@@ -81,13 +81,13 @@ function HeaderLogoLeftPrimaryCentered(props) {
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
-                <div className="mr-10">
+                <div className="mr-6">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                 </div>
             )}
             {primaryLinks.length > 0 && (
                 <ul
-                    className="absolute hidden w-auto -translate-x-1/2 -translate-y-1/2 lg:flex lg:items-center gap-x-10 left-1/2 top-1/2"
+                    className="absolute hidden w-auto -translate-x-1/2 -translate-y-1/2 lg:flex lg:items-center gap-x-6 left-1/2 top-1/2"
                     {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}
                 >
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
@@ -108,18 +108,18 @@ function HeaderLogoLeftPrimaryRight(props) {
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
-                <div className="mr-10">
+                <div className="mr-6">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                 </div>
             )}
             {primaryLinks.length > 0 && (
-                <ul className="hidden ml-auto lg:flex lg:items-center gap-x-10" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+                <ul className="hidden ml-auto lg:flex lg:items-center gap-x-6" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
             {secondaryLinks.length > 0 && (
                 <ul
-                    className={classNames('hidden', 'lg:flex', 'lg:items-center', 'gap-x-2.5', primaryLinks.length > 0 ? 'ml-10' : 'ml-auto')}
+                    className={classNames('hidden', 'lg:flex', 'lg:items-center', 'gap-x-2.5', primaryLinks.length > 0 ? 'ml-6' : 'ml-auto')}
                     {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}
                 >
                     <ListOfLinks links={secondaryLinks} enableAnnotations={enableAnnotations} />
@@ -135,12 +135,12 @@ function HeaderLogoCenteredPrimaryLeft(props) {
     return (
         <div className="relative flex items-center">
             {(title || logo?.url) && (
-                <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
+                <div className="mr-6 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
                     <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                 </div>
             )}
             {primaryLinks.length > 0 && (
-                <ul className="hidden lg:flex lg:items-center gap-x-10" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
+                <ul className="hidden lg:flex lg:items-center gap-x-6" {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}>
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
                 </ul>
             )}
@@ -160,7 +160,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
         <>
             <div className="relative flex items-center">
                 {(title || logo?.url) && (
-                    <div className="mr-10 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
+                    <div className="mr-6 lg:mr-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2">
                         <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
                     </div>
                 )}
@@ -173,7 +173,7 @@ function HeaderLogoCenteredPrimaryCentered(props) {
             </div>
             {primaryLinks.length > 0 && (
                 <ul
-                    className="hidden mt-4 lg:flex lg:items-center lg:justify-center gap-x-10"
+                    className="hidden mt-2 lg:flex lg:items-center lg:justify-center gap-x-6"
                     {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}
                 >
                     <ListOfLinks links={primaryLinks} colors={colors} enableAnnotations={enableAnnotations} />
@@ -243,7 +243,7 @@ function MobileMenu(props) {
 function SiteLogoLink({ title, logo, enableAnnotations }) {
     return (
         <Link href="/" className="flex items-center">
-            {logo && <ImageBlock {...logo} {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />}
+            {logo && <ImageBlock {...logo} className="shrink-0" imageClassName="h-10 w-auto" {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />}
             {title && (
                 <span className="h4" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
                     {title}
