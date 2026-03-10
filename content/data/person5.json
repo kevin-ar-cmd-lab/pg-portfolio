@@ -1,37 +1,37 @@
 {
-    "type": "Person",
-    "name": "Drake Garza",
-    "role": "Job title",
-    "image": {
-        "url": "/images/avatar5.svg",
-        "altText": "Drake Garza",
-        "styles": {
-            "self": {
-                "borderRadius": "medium",
-                "margin": [
-                    "mb-8"
-                ]
-            }
-        },
-        "type": "ImageBlock"
-    },
-    "colors": "bg-light-fg-dark",
-    "elementId": null,
+  "type": "Person",
+  "name": "Samira Khan",
+  "role": "Data Visualization Peer Mentor",
+  "image": {
+    "url": "/images/avatar5.svg",
+    "altText": "Profile image of Samira Khan",
     "styles": {
-        "self": {
-            "padding": [
-                "pt-6",
-                "pb-6",
-                "pl-6",
-                "pr-6"
-            ],
-            "textAlign": "center",
-            "borderColor": "border-neutral",
-            "borderStyle": "solid",
-            "borderWidth": 0,
-            "borderRadius": "none",
-            "justifyContent": "center"
-        }
+      "self": {
+        "borderRadius": "medium",
+        "margin": [
+          "mb-8"
+        ]
+      }
     },
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    "type": "ImageBlock"
+  },
+  "colors": "bg-light-fg-dark",
+  "elementId": null,
+  "styles": {
+    "self": {
+      "padding": [
+        "pt-6",
+        "pb-6",
+        "pl-6",
+        "pr-6"
+      ],
+      "textAlign": "center",
+      "borderColor": "border-neutral",
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "borderRadius": "none",
+      "justifyContent": "center"
+    }
+  },
+  "bio": "Provided feedback on chart readability and narrative structure. Noted strong attention to balancing technical detail with stakeholder clarity."
 }

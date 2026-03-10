@@ -1,0 +1,37 @@
+Daniel - Student Developer Resume
+
+Location: United States (Remote-friendly)
+Email: daniel.student@example.com
+GitHub: https://github.com/daniel-dev-portfolio
+LinkedIn: https://www.linkedin.com/in/daniel-dev-portfolio
+Portfolio: /
+
+Summary
+Entry-level computer science student focused on front-end engineering, accessibility, and performance-focused web development. Builds complete projects with documentation, measurable outcomes, and clear implementation decisions.
+
+Core Skills
+- HTML5 semantics and accessible markup
+- CSS/Tailwind responsive layout systems
+- JavaScript fundamentals and component-driven UI
+- React/Next.js page architecture
+- Git collaboration and pull request workflows
+- SEO metadata and technical content optimization
+
+Selected Projects
+- Campus Club Event Platform: registration flow redesign, mobile-first improvements, and accessibility checks.
+- Student Planner Dashboard: assignment tracking with filtering, local persistence, and keyboard-friendly interactions.
+- Beginner Metrics Dashboard: chart-based reporting with lightweight performance-focused implementation.
+
+Education
+- Computer Science coursework in programming fundamentals, data structures, and software engineering practices.
+
+Experience Highlights
+- Delivered multi-section project case studies with technical tradeoff analysis.
+- Improved page speed by reducing heavy assets and enabling lazy-loading defaults.
+- Added structured metadata and practical SEO improvements across portfolio pages.
+
+Availability
+Actively seeking software engineering and front-end internship opportunities.
+
+Last Updated
+March 2026

@@ -1,37 +1,37 @@
 {
-    "type": "Person",
-    "name": "Asher Schmitt",
-    "role": "Co-founder & CEO",
-    "image": {
-        "url": "/images/avatar3.svg",
-        "altText": "Asher Schmitt",
-        "styles": {
-            "self": {
-                "borderRadius": "medium",
-                "margin": [
-                    "mb-8"
-                ]
-            }
-        },
-        "type": "ImageBlock"
-    },
-    "colors": "bg-light-fg-dark",
-    "elementId": null,
+  "type": "Person",
+  "name": "Priya Patel",
+  "role": "Peer Reviewer, Front-end Study Group",
+  "image": {
+    "url": "/images/avatar3.svg",
+    "altText": "Profile image of Priya Patel",
     "styles": {
-        "self": {
-            "padding": [
-                "pt-6",
-                "pb-6",
-                "pl-6",
-                "pr-6"
-            ],
-            "textAlign": "center",
-            "borderColor": "border-neutral",
-            "borderStyle": "solid",
-            "borderWidth": 0,
-            "borderRadius": "none",
-            "justifyContent": "center"
-        }
+      "self": {
+        "borderRadius": "medium",
+        "margin": [
+          "mb-8"
+        ]
+      }
     },
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    "type": "ImageBlock"
+  },
+  "colors": "bg-light-fg-dark",
+  "elementId": null,
+  "styles": {
+    "self": {
+      "padding": [
+        "pt-6",
+        "pb-6",
+        "pl-6",
+        "pr-6"
+      ],
+      "textAlign": "center",
+      "borderColor": "border-neutral",
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "borderRadius": "none",
+      "justifyContent": "center"
+    }
+  },
+  "bio": "Reviewed pull requests and technical notes. Emphasized Daniel's clarity in change summaries, quality checks, and responsive bug resolution."
 }

@@ -8,6 +8,13 @@
     body {
         @apply text-base;
     }
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+        @apply outline outline-2 outline-offset-2 outline-primary;
+    }
     h1,
     .h1,
     h2,
@@ -137,6 +144,13 @@
     }
     .sb-component-link-secondary {
         @apply text-current hover:text-primary;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .sb-component-button,
+        .sb-component-link {
+            transition: none;
+        }
     }
 
     /* Form controls */

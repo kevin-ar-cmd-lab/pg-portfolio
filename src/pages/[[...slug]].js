@@ -4,7 +4,7 @@ import { allContent } from '../utils/local-content';
 import { getComponent } from '../components/components-registry';
 import { resolveStaticProps } from '../utils/static-props-resolvers';
 import { resolveStaticPaths } from '../utils/static-paths-resolvers';
-import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } from '../utils/seo-utils';
+import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription, seoGenerateCanonicalUrl, seoGenerateJsonLd } from '../utils/seo-utils';
 
 function Page(props) {
     const { page, site } = props;
@@ -19,11 +19,16 @@ function Page(props) {
     const title = seoGenerateTitle(page, site);
     const metaTags = seoGenerateMetaTags(page, site);
     const metaDescription = seoGenerateMetaDescription(page, site);
+    const canonicalUrl = seoGenerateCanonicalUrl(page, site);
+    const jsonLdSchemas = seoGenerateJsonLd(page, site);
     return (
         <>
             <Head>
                 <title>{title}</title>
                 {metaDescription && <meta name="description" content={metaDescription} />}
+                {metaDescription && <meta property="og:description" content={metaDescription} />}
+                {metaDescription && <meta name="twitter:description" content={metaDescription} />}
+                {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
                 {metaTags.map((metaTag) => {
                     if (metaTag.format === 'property') {
                         // OpenGraph meta tags (og:*) should be have the format <meta property="og:…" content="…">
@@ -33,6 +38,9 @@ function Page(props) {
                 })}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {site.favicon && <link rel="icon" href={site.favicon} />}
+                {jsonLdSchemas.map((schema, index) => (
+                    <script key={`jsonld-${index}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+                ))}
             </Head>
             <PageLayout page={page} site={site} />
         </>

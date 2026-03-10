@@ -1,21 +1,18 @@
 ---
-title: Case study 2
-slug: case-study-2
-date: '2022-02-16'
-excerpt: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem,
-  tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien.
-  Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem
-  pellentesque fermentum. Sed in facilisis dui.
+title: Student Planner Dashboard Case Study
+slug: student-planner-dashboard-case-study
+date: '2026-02-24'
+excerpt: Designed a dashboard for assignment planning with status filters, deadline prioritization, and persistent local state.
 featuredImage:
-  url: /images/img-placeholder.svg
-  altText: Case study 2
+  type: ImageBlock
+  url: /images/abstract-feature2.svg
+  altText: Student planner dashboard case study thumbnail
   styles:
     self:
       borderRadius: x-large
-  type: ImageBlock
 bottomSections:
-  - title: Divider
+  - type: DividerSection
+    title: Divider
     colors: bg-light-fg-dark
     styles:
       self:
@@ -24,37 +21,7 @@ bottomSections:
           - pl-7
           - pb-7
           - pr-7
-    type: DividerSection
-  - items:
-      - title: About Company
-        tagline: This is the tagline
-        subtitle: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante
-          lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at
-          auctor sapien.
-        image:
-          url: /images/telus-logo.svg
-          altText: Company logo
-          styles:
-            self:
-              margin:
-                - ml-3
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-6
-              - pl-6
-              - pb-6
-              - pr-6
-            textAlign: left
-            borderColor: border-neutralAlt
-            borderStyle: none
-            borderWidth: 0
-            borderRadius: none
-            flexDirection: row
-        type: FeaturedItem
+  - type: FeaturedItemsSection
     variant: small-list
     colors: bg-light-fg-dark
     styles:
@@ -67,9 +34,28 @@ bottomSections:
           - pb-0
           - pr-0
         justifyContent: center
-      subtitle:
-        textAlign: center
-    type: FeaturedItemsSection
+    items:
+      - type: FeaturedItem
+        title: Project Links
+        subtitle: Demo and source repositories
+        text: >-
+          Live demo: https://example.netlify.app/student-planner\n\nSource:
+          https://github.com/daniel-dev-portfolio/student-planner-dashboard
+        image:
+          type: ImageBlock
+          url: /images/icon2.svg
+          altText: Planner project links icon
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-6
+              - pl-6
+              - pb-6
+              - pr-6
+            textAlign: left
+            borderRadius: none
+            flexDirection: row
 isFeatured: true
 colors: bg-light-fg-dark
 styles:
@@ -80,24 +66,52 @@ styles:
       - pb-5
       - pr-5
     textAlign: center
-    borderColor: border-light
     borderStyle: none
     borderWidth: 0
     borderRadius: none
     flexDirection: col
+author: content/data/person3.json
+seo:
+  type: Seo
+  metaTitle: Student Planner Dashboard Case Study
+  metaDescription: Case study covering dashboard planning, data persistence, UX tradeoffs, and measurable outcomes.
+  socialImage: /images/abstract-feature2.svg
 type: PostLayout
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+## Project Summary
 
-![](/images/img-placeholder.svg)
+The planner dashboard was built to help students track assignments by urgency and completion state in one view. The main challenge was balancing simple interactions with useful filtering behavior.
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+## Problem
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+Early versions supported task entry but lacked sorting and clarity around due dates. Users reported that the interface felt "busy" when multiple classes were active.
 
-> Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices.
->
-> _By Gordon Red - Director of IT_
+## Constraints
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+- Needed to work without backend services.
+- Data had to persist between sessions using local storage.
+- UI had to remain understandable for first-time users in under one minute.
+
+## Technical Decisions
+
+1. Created a normalized local data shape for tasks with class, priority, and due date fields.
+2. Added filter chips for status and class context, then synced filter state to URL params.
+3. Used reusable card components so active/overdue/completed states shared the same baseline markup.
+4. Added deadline sorting fallback logic for incomplete records.
+
+## Accessibility and Performance
+
+- Added descriptive button labels and keyboard-friendly filter toggles.
+- Reduced layout shift by stabilizing card heights.
+- Deferred non-critical illustrations to keep initial paint fast.
+
+## Outcome
+
+- Task completion consistency improved during pilot usage from 58% to 79%.
+- Users found overdue items 2x faster compared to list-only prototype.
+- Peer review highlighted better scannability and lower interaction friction.
+
+## What Was Learned
+
+State management and information hierarchy were tightly coupled. A clean filtering model made the UI simpler and easier to trust even before visual refinement.

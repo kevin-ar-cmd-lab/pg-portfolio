@@ -6,32 +6,32 @@ sections:
     elementId: intro
     title:
       type: TitleBlock
-      text: Daniel | Introductory Computer Science Student
+      text: Daniel | Student Developer Portfolio
       color: text-dark
-    subtitle: Building practical web projects while learning core development skills
+    subtitle: Practical front-end work with measurable outcomes and clear engineering decisions
     text: >-
-      Daniel is an entry-level student focused on front-end fundamentals, problem
-      solving, and clean user experiences. This portfolio highlights academic
-      projects, technical strengths, and current learning goals.
+      Daniel is an entry-level computer science student building production-style
+      web projects. This site showcases detailed case studies, technical writeups,
+      and collaboration evidence for internship applications.
     actions:
       - type: Button
-        label: View Projects
-        url: /#projects
+        label: View Case Studies
+        url: /blog
         style: primary
-        showIcon: false
+        showIcon: true
         icon: arrowRight
         iconPosition: right
       - type: Link
-        label: Contact Daniel
-        url: /#contact
+        label: Download Resume
+        url: /resume-daniel.txt
         style: secondary
         showIcon: true
-        icon: arrowRight
+        icon: arrowDown
         iconPosition: right
     media:
       type: ImageBlock
       url: /images/main-hero.svg
-      altText: Portfolio hero illustration
+      altText: Portfolio hero illustration for student developer
     badge:
       type: Badge
       label: Open to internship opportunities
@@ -56,7 +56,7 @@ sections:
       styles:
         self:
           textAlign: center
-    subtitle: Current capabilities built through coursework and personal practice
+    subtitle: Foundation used to deliver complete portfolio projects
     badge:
       type: Badge
       label: Technical Foundation
@@ -66,13 +66,15 @@ sections:
           textAlign: center
     items:
       - type: FeaturedItem
-        title: HTML & Semantic Structure
-        subtitle: Strong page structure and accessibility basics
-        text: Creates responsive page layouts with semantic tags and clear content hierarchy.
+        title: Front-end Architecture
+        subtitle: Semantic HTML, accessible structure, scalable CSS
+        text: >-
+          Builds responsive page systems with reusable sections, semantic heading
+          order, and consistent spacing/typography for maintainability.
         image:
           type: ImageBlock
           url: /images/icon1.svg
-          altText: Skill icon one
+          altText: Front-end architecture icon
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -86,13 +88,15 @@ sections:
             flexDirection: row
             textAlign: left
       - type: FeaturedItem
-        title: CSS & Tailwind Styling
-        subtitle: Clean styling and component-level consistency
-        text: Applies spacing systems, typography, and utility classes to build polished interfaces.
+        title: JavaScript + React Workflows
+        subtitle: Interactive features and component-driven implementation
+        text: >-
+          Implements dynamic UI behavior, data handling, and component state with
+          clear code organization and predictable user interactions.
         image:
           type: ImageBlock
           url: /images/icon2.svg
-          altText: Skill icon two
+          altText: JavaScript and React workflow icon
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -106,13 +110,15 @@ sections:
             flexDirection: row
             textAlign: left
       - type: FeaturedItem
-        title: JavaScript Fundamentals
-        subtitle: Interactive behavior and logic building
-        text: Uses modern JavaScript for dynamic UI features, validation, and state updates.
+        title: Quality Optimization
+        subtitle: Accessibility, SEO, and performance improvements
+        text: >-
+          Applies Lighthouse and usability checks, improves metadata quality, and
+          reduces avoidable page weight to improve real browsing experience.
         image:
           type: ImageBlock
           url: /images/icon3.svg
-          altText: Skill icon three
+          altText: Optimization icon
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -143,27 +149,36 @@ sections:
     elementId: projects
     title:
       type: TitleBlock
-      text: Selected Projects
+      text: Detailed Project Pages
       color: text-dark
       styles:
         self:
           textAlign: center
-    subtitle: Intro-level projects focused on practical outcomes
+    subtitle: Case studies with problem framing, constraints, decisions, and outcomes
     items:
       - type: FeaturedItem
-        title: Study Planner App
-        tagline: Personal productivity tool
-        subtitle: HTML, CSS, JavaScript
+        title: Campus Club Event Platform
+        tagline: Case Study 1
+        subtitle: Next.js, Netlify Forms, responsive UI
         text: >-
-          Built a lightweight planner to track assignments and deadlines with
-          status filters and local browser storage.
+          Rebuilt event registration around clear information hierarchy and mobile
+          completion flow. Documented architecture, accessibility constraints, and
+          conversion improvements.
         image:
           type: ImageBlock
           url: /images/abstract-feature1.svg
-          altText: Study planner project graphic
+          altText: Campus club event platform visual
           styles:
             self:
               borderRadius: x-large
+        actions:
+          - type: Link
+            label: Read Case Study
+            url: /blog/campus-club-event-platform-case-study
+            style: primary
+            showIcon: true
+            icon: arrowRight
+            iconPosition: right
         colors: bg-light-fg-dark
         styles:
           self:
@@ -175,19 +190,28 @@ sections:
             borderRadius: x-large
             flexDirection: col
       - type: FeaturedItem
-        title: Club Event Landing Page
-        tagline: Campus communication project
-        subtitle: Responsive web design
+        title: Student Planner Dashboard
+        tagline: Case Study 2
+        subtitle: Component design, local persistence, filtering UX
         text: >-
-          Designed and developed a one-page event site with mobile-first layout,
-          schedule highlights, and registration call-to-actions.
+          Designed and shipped a dashboard to manage assignments by status and
+          deadline priority with keyboard-friendly controls and stronger visual
+          hierarchy.
         image:
           type: ImageBlock
           url: /images/abstract-feature2.svg
-          altText: Club event site project graphic
+          altText: Student planner dashboard visual
           styles:
             self:
               borderRadius: x-large
+        actions:
+          - type: Link
+            label: Read Case Study
+            url: /blog/student-planner-dashboard-case-study
+            style: primary
+            showIcon: true
+            icon: arrowRight
+            iconPosition: right
         colors: bg-light-fg-dark
         styles:
           self:
@@ -199,19 +223,28 @@ sections:
             borderRadius: x-large
             flexDirection: col
       - type: FeaturedItem
-        title: Beginner Data Dashboard
-        tagline: Intro to data presentation
-        subtitle: JavaScript + charting basics
+        title: Beginner Metrics Dashboard
+        tagline: Case Study 3
+        subtitle: Data visualization fundamentals and performance iteration
         text: >-
-          Created a simple dashboard that visualized sample student performance
-          data to practice component reuse and visual hierarchy.
+          Built a lightweight metrics dashboard with interactive charts and
+          documented tradeoffs between readability, speed, and implementation
+          complexity.
         image:
           type: ImageBlock
           url: /images/abstract-feature3.svg
-          altText: Dashboard project graphic
+          altText: Beginner metrics dashboard visual
           styles:
             self:
               borderRadius: x-large
+        actions:
+          - type: Link
+            label: Read Case Study
+            url: /blog/beginner-metrics-dashboard-case-study
+            style: primary
+            showIcon: true
+            icon: arrowRight
+            iconPosition: right
         colors: bg-light-fg-dark
         styles:
           self:
@@ -235,39 +268,120 @@ sections:
       subtitle:
         textAlign: center
 
-  - type: GenericSection
-    elementId: about
+  - type: FeaturedItemsSection
+    elementId: credibility
     title:
       type: TitleBlock
-      text: Education & Career Goal
+      text: Credibility Assets
       color: text-dark
-    subtitle: Introductory student profile
-    text: >-
-      Daniel is currently completing foundational computer science coursework and
-      is building a portfolio to prepare for a first internship. Current focus
-      areas include front-end engineering, UI accessibility, and collaborative
-      Git workflows.
-    actions:
-      - type: Link
-        label: Jump to Contact
-        url: /#contact
-        style: primary
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-    media:
-      type: ImageBlock
-      url: /images/hero3.svg
-      altText: Student growth illustration
-    badge:
-      type: Badge
-      label: Learning in public
-      color: text-primary
-    colors: bg-light-fg-dark
+      styles:
+        self:
+          textAlign: center
+    subtitle: Resume, profiles, and references in one place
+    variant: three-col-grid
+    items:
+      - type: FeaturedItem
+        title: Resume Snapshot
+        subtitle: Education, tools, and project outcomes
+        text: >-
+          Includes current coursework, core technologies, delivery examples, and
+          internship availability details.
+        actions:
+          - type: Button
+            label: Download Resume
+            url: /resume-daniel.txt
+            style: primary
+            showIcon: true
+            icon: arrowDown
+            iconPosition: right
+        image:
+          type: ImageBlock
+          url: /images/hero.svg
+          altText: Resume document illustration
+        colors: bg-neutral-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: Professional Profiles
+        subtitle: Public engineering presence
+        text: >-
+          GitHub and LinkedIn profiles include project repositories, activity
+          history, and collaboration context.
+        actions:
+          - type: Link
+            label: GitHub
+            url: https://github.com/daniel-dev-portfolio
+            style: primary
+            showIcon: true
+            icon: arrowRight
+            iconPosition: right
+          - type: Link
+            label: LinkedIn
+            url: https://www.linkedin.com/in/daniel-dev-portfolio
+            style: secondary
+            showIcon: true
+            icon: arrowRight
+            iconPosition: right
+        image:
+          type: ImageBlock
+          url: /images/hero2.svg
+          altText: Professional profile links illustration
+        colors: bg-neutral-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: Testimonials
+        subtitle: Mentor and teammate references
+        text: >-
+          References highlight reliability, communication quality, and code
+          review readiness across class and team settings.
+        actions:
+          - type: Link
+            label: Read Testimonials
+            url: /about#testimonials
+            style: primary
+            showIcon: true
+            icon: arrowRight
+            iconPosition: right
+        image:
+          type: ImageBlock
+          url: /images/hero3.svg
+          altText: Testimonials illustration
+        colors: bg-neutral-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+    colors: bg-neutral-fg-dark
     styles:
       self:
-        alignItems: center
-        flexDirection: row-reverse
+        padding:
+          - pt-16
+          - pl-8
+          - pb-16
+          - pr-8
+        justifyContent: center
+      subtitle:
+        textAlign: center
 
   - type: GenericSection
     elementId: contact
@@ -275,10 +389,10 @@ sections:
       type: TitleBlock
       text: Contact Daniel
       color: text-dark
-    subtitle: Send a message for internships, project collaboration, or networking
+    subtitle: Internship opportunities, collaboration requests, and portfolio feedback
     text: >-
-      This form can be connected to Netlify Forms to receive submissions. Use it
-      to reach out about opportunities or feedback.
+      The form is configured for Netlify Forms compatibility and can be used for
+      recruiting outreach or project collaboration discussions.
     media:
       type: FormBlock
       elementId: contact-form
@@ -323,13 +437,13 @@ sections:
           borderRadius: large
     badge:
       type: Badge
-      label: Get In Touch
+      label: Contact
       color: text-primary
-    colors: bg-neutral-fg-dark
+    colors: bg-light-fg-dark
 seo:
   type: Seo
-  metaTitle: Daniel | Student Portfolio
-  metaDescription: Introductory student portfolio for Daniel featuring projects, skills, and contact details.
+  metaTitle: Daniel | Front-end Student Portfolio
+  metaDescription: Portfolio of Daniel featuring case studies, resume links, testimonials, and contact information.
   socialImage: /images/main-hero.jpg
 type: PageLayout
 ---
