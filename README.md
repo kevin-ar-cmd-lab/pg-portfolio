@@ -1,74 +1,72 @@
-# Content Ops Starter
+# Daniel Portfolio
 
-![Content Ops Starter](https://assets.stackbit.com/docs/content-ops-starter-thumb.png)
+A portfolio site for an entry-level computer science student, built with Next.js and deployed on Netlify.  
+The site includes case studies, technical writing, and content-managed sections powered by markdown/json data.
 
-Netlify starter that's made for customization with a flexible content model, component library, [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
+## Tech Stack
 
-**⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
+- Next.js 15
+- React 19
+- Tailwind CSS
+- Netlify (build + hosting)
+- Netlify Visual Editor / Stackbit config
+- Optional Algolia search integration
 
-## Table of Contents
+## Project Structure
 
-- [Deploying to Netlify](#deploying-to-netlify)
-- [Develop with Netlify Visual Editor Locally](#develop-with-netlify-visual-editor-locally)
-- [Building for production](#building-for-production)
-- [Setting Up Algolia Search](#setting-up-algolia-search)
-- [Next Steps](#next-steps)
-- [Support](#support)
+- `content/`: page content and site data (`.md` + `.json`)
+- `src/components/`: reusable UI components (sections, blocks, atoms)
+- `src/pages/`: Next.js routes
+- `public/`: static assets (images, resume, icons)
+- `sources/local/`: content model and presets for Visual Editor
+- `netlify.toml`: Netlify build configuration
 
-## Deploying to Netlify
+## Local Development
 
-If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+Prerequisite: Node.js 18+
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/content-ops-starter)
-
-## Develop with Netlify Visual Editor Locally
-
-The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
-
-Run the Next.js development server:
-
-```txt
-cd content-ops-starter
+```bash
+npm install
 npm run dev
 ```
 
-Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
+The site runs locally on `http://localhost:3000`.
 
-```txt
-npm install -g @stackbit/cli
-stackbit dev
-```
+## Build and Production Run
 
-This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
-
-![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
-
-## Building for production
-
-To build a static site for production, run the following command
-
-```shell
+```bash
 npm run build
+npm run start
 ```
 
-## Setting Up Algolia Search
+## Netlify Deployment
 
-This starter includes Algolia search integration. To set it up:
+This repository is configured for Netlify with:
 
-1. Create an [Algolia](https://www.algolia.com/) account
-2. Create a new application and index
-3. Set the following environment variables:
-   - `NEXT_PUBLIC_ALGOLIA_APP_ID` - Your Algolia application ID
-   - `NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY` - Your Algolia search-only API key
-   - `NEXT_PUBLIC_ALGOLIA_INDEX_NAME` - Your index name
+- Build command: `npm run build`
+- Publish directory: `.next`
 
-## Next Steps
+These values are defined in [`netlify.toml`](./netlify.toml).
 
-Here are a few suggestions on what to do next if you're new to Netlify visual editor:
+## Content Editing
 
-- Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
+Most content is managed in `content/`:
 
-## Support
+- Home page: `content/pages/index.md`
+- Blog posts: `content/pages/blog/*.md`
+- Global site config: `content/data/site.json`
+- Header and footer: `content/data/header.json`, `content/data/footer.json`
 
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+The project also includes `stackbit.config.ts` and local models under `sources/local/models` to support Visual Editor workflows.
+
+## Optional: Algolia Search Setup
+
+If search is enabled, configure these environment variables:
+
+- `NEXT_PUBLIC_ALGOLIA_APP_ID`
+- `NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY`
+- `NEXT_PUBLIC_ALGOLIA_INDEX_NAME`
+
+## License
+
+See [`LICENSE`](./LICENSE).
